@@ -19,7 +19,55 @@ rules:
 - apiGroups:
   - external.yonghui.cn
   resources:
+  - appexternalnats
+  verbs:
+  - get
+  - list
+  - watch
+  - create
+  - update
+  - patch
+  - delete
+- apiGroups:
+  - apps
+  resources:
+  - deployments
+  verbs:
+  - get
+  - list
+  - watch
+  - create
+  - update
+  - patch
+  - delete
+- apiGroups:
+  - external.yonghui.cn
+  resources:
   - classicexternalnats
+  verbs:
+  - get
+  - list
+  - watch
+  - create
+  - update
+  - patch
+  - delete
+- apiGroups:
+  - apps
+  resources:
+  - deployments
+  verbs:
+  - get
+  - list
+  - watch
+  - create
+  - update
+  - patch
+  - delete
+- apiGroups:
+  - external.yonghui.cn
+  resources:
+  - externalnatpools
   verbs:
   - get
   - list
